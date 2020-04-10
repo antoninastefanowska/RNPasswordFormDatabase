@@ -120,8 +120,8 @@ class Database {
         let placeholders = '(';
         for (let passportForm of passportForms) {
             placeholders += separator + '?';
-            separator = ", ";
-            ids.push (passportForm.id);
+            separator = ', ';
+            ids.push(passportForm.id);
         }
         placeholders += ');';
 
